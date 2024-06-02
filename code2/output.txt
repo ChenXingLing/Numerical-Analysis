@@ -1,0 +1,12 @@
+N=5
+Max Error of grid (1) :0.432692
+Max Error of grid (2) :0.555911
+N=10
+Max Error of grid (1) :1.915643
+Max Error of grid (2) :0.108929
+N=20
+Max Error of grid (1) :58.278125
+Max Error of grid (2) :0.015325
+N=40
+Max Error of grid (1) :78689.037829
+Max Error of grid (2) :0.000274
