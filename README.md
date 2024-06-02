@@ -46,7 +46,7 @@
 
 ## **【Code in】**
 
-使用 Matlab 构造函数 $f(x)=\frac{1}{1+25x^2},x\in[-1,1]$ 的 Lagrange 差值多项式 $p_L(x)$，利用 $\int_{-1}^{1}p_L(x)dx$ 计算积分 $\int_{-1}^{1}f(x)dx$ 的近似值， 并计算误差 $\left| \int_{-1}^1p_L(x)dx-\int_{-1}^1f(x)dx\right|$。插值节点取 $x_i=1-\frac{2i}{n}$ 和 $x'_i=-\cos(\frac{i+1}{n+2}\pi)$，$n$ 分别取 $5,10,15,20,25,30,35,40$。
+使用 Matlab 构造函数 $f(x)=\frac{1}{1+25x^2},x\in[-1,1]$ 的 Lagrange 差值多项式 $p_L(x)$，利用 $\int_{-1}^{1}p_L(x)dx$ 计算积分 $\int_{-1}^{1}f(x)\ dx$ 的近似值， 并计算误差 $|\int_{-1}^1p_L(x)dx-\int_{-1}^1f(x)dx|$。插值节点取 $x_i=1-\frac{2i}{n}$ 和 $x'_i=-\cos(\frac{i+1}{n+2}\pi)$，$n$ 分别取 $5,10,15,20,25,30,35,40$。
 
 [【report】](./codein/report.md)
 
