@@ -46,43 +46,43 @@
 
 ## **【Code in】**
 
-使用 Matlab 构造函数 $f(x)=\frac{1}{1+25x^2},x\in[-1,1]$ 的 Lagrange 差值多项式 $p_L(x)$，利用 $\int_{-1}^{1}p_L(x)dx$ 计算积分 $\int _{-1}^{1}f(x)dx$ 的近似值， 并计算误差 $\left| \int_{-1}^1 p_L(x)dx-\int_{-1}^1 f(x)dx \right|$。插值节点取 $x_i=1-\frac{2i}{n}$ 和 $x'_i=-\cos(\frac{i+1}{n+2}\pi)$，$n$ 分别取 $5,10,15,20,25,30,35,40$。
+使用 Matlab 构造函数 $f(x)=\frac{1}{1+25x^2},x\in[-1,1]$ 的 Lagrange 差值多项式 $p_L(x)$，利用 $\int_{-1}^{1}p_L(x)dx$ 计算积分 $\int_{-1}^{1}f(x)dx$ 的近似值， 并计算误差 $\left| \int_{-1}^1p_L(x)dx-\int_{-1}^1f(x)dx\right|$。插值节点取 $x_i=1-\frac{2i}{n}$ 和 $x'_i=-\cos(\frac{i+1}{n+2}\pi)$，$n$ 分别取 $5,10,15,20,25,30,35,40$。
 
 [【report】](./codein/report.md)
 
 ## **【Code 7.4】**
 
-使用 Matlab 实现龙贝格算法，分别计算积分 $I_1=\int_0^1\frac{\sin x}{x}\ dx$、$I_2=\int_{-1}^{1}\frac{\cos x-e^x}{\sin x}\ dx$、$I_3=\int_1^{\infty}\frac{1}{xe^x}\ dx$ 并打印龙贝格阵列，计算误差 $error=|I-R(m,m)|,m=1,2,3...,7$ 。
+使用 Matlab 实现龙贝格算法，分别计算积分 $I_1=\int_0^1\frac{\sin x}{x}\ dx$、$I_2=\int_{-1}^{1}\frac{\cos{x}-e^x}{\sin x}\ dx$、$I_{3}=\int_{1}^{\infty}\frac{1}{{x}e^x}\ dx$ 并打印龙贝格阵列，计算误差 $error=|I-R(m,m)|,m=1,2,3...,7$ 。
 
 [【report】](./code7_4/report.md)
 
 ## **【Code ga】**
 
-使用 Matlab 编写复化梯形积分公式和复化3点Gauss积分公式，分别计算积分 $\int_0^1e^{-x^2}\ dx$、$\int_0^4\frac{1}{1+x^2}\ dx$、$\int_0^{2\pi}\frac{1}{2+\cos x}\ dx$，节点个数取 $N=1,2,4,...,128$。
+使用 Matlab 编写复化梯形积分公式和复化3点Gauss积分公式，分别计算积分 $\int_0^1e^{-x^2}\ dx$、$\int_{0}^{4}\frac{1}{1+x^2}\ dx$、$\int_{0}^{2\pi}\frac{1}{2+\cos{x}}\ dx$，节点个数取 $N=1,2,4,...,128$。
 
 [【report】](./codega/report.md)
 
 ## **【Code 8.3.2】**
 
-使用 Matlab 实现四阶龙格-库塔方法，在区间 $[0,5]$ 上求解初值问题 $\begin{cases}x'=\lambda x+\cos t-\lambda\sin t\\x(0)=0 \end{cases}$，计算数值解和精确解的误差 $error$，步长 $h=0.01$，$\lambda$ 分别取 $5,-5,-10$。
+使用 Matlab 实现四阶龙格-库塔方法，在区间 $[0,5]$ 上求解初值问题 $\begin{cases}x'=\lambda{x}+\cos{t}-\lambda\sin{t}\\x(0)=0\end{cases}$，计算数值解和精确解的误差 $error$，步长 $h=0.01$，$\lambda$ 分别取 $5,-5,-10$。
 
 [【report】](./code832/report.md)
 
 ## **【Code rk】**
 
-使用 Matlab 实现RKF54方法，求解初值问题 $\begin{cases}x'=e^{xt}+\cos(x-t)\\x(1)=3 \end{cases}$，取初值步长 $h=0.01$。
+使用 Matlab 实现RKF54方法，求解初值问题 $\begin{cases}x'=e^{xt}+\cos{(x-t)}\\x(1)=3\end{cases}$，取初值步长 $h=0.01$。
 
 [【report】](./coderk/report.md)
 
 ## **【Code mu】**
 
-使用 Matlab 实现 $\text{Adams-Bashforth}$ 公式 ，求解初值问题 $\begin{cases}x'=\frac{t-e^{-t}}{x+e^{x}}\\x(0)=0 \end{cases}$ ，该方程真解由等式 $x^2-t^2+2e^x-2e^{-t}=0$ 给出。
+使用 Matlab 实现 $\text{Adams-Bashforth}$ 公式 ，求解初值问题 $\begin{cases}x'=\frac{t-e^{-t}}{x+e^{x}}\\x(0)=0\end{cases}$ ，该方程真解由等式 $x^2-t^2+2e^x-2e^{-t}=0$ 给出。
 
 [【report】](./codemu/report.md)
 
 ## **【Code 8.9.2】**
 
-使用 Matlab 实现有限差分法，分别求解线性两点边值问题 $\begin{cases}x''=-x\\x(0)=3,x(\frac{\pi}{2}) =7\end{cases}$、$\begin{cases}x''=2e^t-x\\x(0)=2,x(1) =e+\cos 1\end{cases}$，并计算误差 $Error=\max\limits_{t}\{|x_{real}(t)-x(t)|\}$ 和收敛阶 $Ord=\frac{\ln{\frac{Error_{old}}{Error_{now}}}}{\ln{\frac{N_{now}}{N_{old}}}}$。$n$ 分别取 $10,20,40,80,160$ 。
+使用 Matlab 实现有限差分法，分别求解线性两点边值问题 $\begin{cases}x''=-x\\x(0)=3,x(\frac{\pi}{2}) =7\end{cases}$、$\begin{cases}x''=2e^t-x\\x(0)=2,x(1) =e+\cos{1}\end{cases}$，并计算误差 $Error=\max\limits_{t}\{|x_{real}(t)-x(t)|\}$ 和收敛阶 $Ord=\frac{\ln{\frac{Error_{old}}{Error_{now}}}}{\ln{\frac{N_{now}}{N_{old}}}}$。$n$ 分别取 $10,20,40,80,160$ 。
 
 [【report】](./code8_9_12/report.md)
 
